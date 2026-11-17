@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跑步訓練強度專有名詞知識庫</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --sub: #94a3b8;
+      --low: #10b981;
+      --mid: #f59e0b;
+      --high: #f43f5e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+    }
+    .container { max-width: 960px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 2.5rem; }
+    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    header p { color: var(--sub); font-size: 1rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .card:hover { transform: translateY(-4px); border-color: var(--muted); }
+    .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+    .num { font-size: 0.85rem; color: var(--sub); font-weight: 700; }
+    .badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .badge.low { background: rgba(16, 185, 129, 0.15); color: var(--low); }
+    .badge.mid { background: rgba(245, 158, 11, 0.15); color: var(--mid); }
+    .badge.high { background: rgba(244, 63, 94, 0.15); color: var(--high); }
+    .card h2 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+    .card .en { font-size: 0.85rem; color: var(--sub); margin-bottom: 0.75rem; }
+    .card p { font-size: 0.95rem; color: var(--muted); margin-bottom: 1rem; }
+    .card-footer { font-size: 0.85rem; color: var(--low); font-weight: 600; }
+    .section-title { font-size: 1.25rem; margin-bottom: 1rem; color: var(--text); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    th, td { padding: 0.9rem 1rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    th { background: rgba(255, 255, 255, 0.03); color: var(--sub); font-weight: 600; }
+    tr:last-child td { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>跑步訓練強度專有名詞知識庫</h1>
+      <p>點選下方任一跑步強度，了解其代表意義、判斷依據與課表安排時機</p>
+    </header>
+
+    <section class="grid">
+      <a href="types/01-recovery.html" class="card">
+        <div>
+          <div class="card-top"><span class="num">LEVEL 01</span><span class="badge low">極低強度・主動恢復</span></div>
+          <h2>恢復跑</h2>
+          <div class="en">Recovery Run</div>
+          <p>強度最低的動態恢復慢跑，目的不在提升體能，而是促進血液循環、加速高強度訓練後的疲勞代謝。</p>
+        </div>
+        <div class="card-footer">點選查看名詞解析 →</div>
+      </a>
+
+      <a href="types/02-easy.html" class="card">
+        <div>
+          <div class="card-top"><span class="num">LEVEL 02</span><span class="badge low">低強度・有氧基礎</span></div>
+          <h2>輕鬆跑</h2>
+          <div class="en">Easy Run (E跑)</div>
+          <p>日常訓練佔比最高的基礎慢跑，在完全不喘、可流暢聊天的狀態下累積跑量並打好有氧底座。</p>
+        </div>
+        <div class="card-footer">點選查看名詞解析 →</div>
+      </a>
+
+      <a href="types/03-aerobic.html" class="card">
+        <div>
+          <div class="card-top"><span class="num">LEVEL 03</span><span class="badge low">中低強度・穩定有氧</span></div>
+          <h2>有氧跑</h2>
+          <div class="en">Aerobic Run</div>
+          <p>比輕鬆跑稍微積極的穩定有氧配速，能扎實刺激有氧耐力與肌耐力，卻不至於累積過度疲勞。</p>
+        </div>
+        <div class="card-footer">點選查看名詞解析 →</div>
+      </a>
+
+      <a href="types/04-marathon.html" class="card">
+        <div>
+          <div class="card-top"><span class="num">LEVEL 04</span><span class="badge mid">中強度・比賽巡航</span></div>
+          <h2>馬配跑</h2>
+          <div class="en">Marathon Pace (M跑)</div>
+          <p>模擬馬拉松比賽預計巡航配速的訓練，幫助身體習慣比賽節奏、提升特定配速下的有氧經濟性。</p>
+        </div>
+        <div class="card-footer">點選查看名詞解析 →</div>
+      </a>
+
+      <a href="types/05-threshold.html" class="card">
+        <div>
+          <div class="card-top"><span class="num">LEVEL 05</span><span class="badge mid">中高強度・乳酸清除</span></div>
+          <h2>乳酸閾值跑</h2>
+          <div class="en">Threshold / Tempo Run (T跑)</div>
+          <p>處於「微喘但能維持穩定」的乳酸臨界點，訓練身體清除與耐受乳酸的能力，延緩雙腿酸脹。</p>
+        </div>
+        <div class="card-footer">點選查看名詞解析 →</div>
+      </a>
+
+      <a href="types/06-interval.html" class="card">
+        <div>
+          <div class="card-top"><span class="num">LEVEL 06</span><span class="badge high">高強度・最大攝氧量</span></div>
+          <h2>間歇跑</h2>
+          <div class="en">Interval Run (I跑)</div>
+          <p>透過多趟數、約 3～5 分鐘的高強度奔跑搭配組間休息，直接刺激心肺上限與最大攝氧量（VO2max）。</p>
+        </div>
+        <div class="card-footer">點選查看名詞解析 →</div>
+      </a>
+
+      <a href="types/07-repetition.html" class="card">
+        <div>
+          <div class="card-top"><span class="num">LEVEL 07</span><span class="badge high">極高強度・無氧動力</span></div>
+          <h2>高速重複跑</h2>
+          <div class="en">Repetition Run (R跑)</div>
+          <p>短距離、高速度加上充分休息的衝刺訓練，目的在於提升無氧動力、神經徵召效率與高速經濟性。</p>
+        </div>
+        <div class="card-footer">點選查看名詞解析 →</div>
+      </a>
+    </section>
+
+    <h2 class="section-title">七大強度判斷依據與目的總覽表</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>專有名詞</th>
+          <th>心率區間依據</th>
+          <th>呼吸與談話判斷依據</th>
+          <th>核心訓練目的</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>01. 恢復跑</td><td>Zone 1 (&lt; 70% 最大心率)</td><td>極度輕鬆，呼吸完全平緩</td><td>主動恢復、促進血液循環</td></tr>
+        <tr><td>02. 輕鬆跑 (E跑)</td><td>Zone 1–2 (65–78% 最大心率)</td><td>可完整流暢聊天交談</td><td>建立有氧基礎、累積週跑量</td></tr>
+        <tr><td>03. 有氧跑</td><td>Zone 2–3初 (75–82% 最大心率)</td><td>微喘但仍可說出完整句子</td><td>強化中長距離有氧耐力</td></tr>
+        <tr><td>04. 馬配跑 (M跑)</td><td>Zone 3 (80–85% 最大心率)</td><td>呼吸加深，僅能簡短交談</td><td>模擬賽事配速與巡航體感</td></tr>
+        <tr><td>05. 乳酸閾值跑 (T跑)</td><td>Zone 4 (86–90% 最大心率)</td><td>明顯費力，僅能說出單字</td><td>提升乳酸清除率與速度耐力</td></tr>
+        <tr><td>06. 間歇跑 (I跑)</td><td>Zone 5 (92–98% 最大心率)</td><td>大口喘氣，完全無法交談</td><td>刺激最大攝氧量 (VO2max)</td></tr>
+        <tr><td>07. 高速重複跑 (R跑)</td><td>無氧區間 (以配速為主)</td><td>短時間極速輸出，組間完全休息</td><td>提升無氧速度與跑步經濟性</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
